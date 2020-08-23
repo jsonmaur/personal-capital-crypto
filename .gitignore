@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+*.swp
+
+# app
+.env
+dist
