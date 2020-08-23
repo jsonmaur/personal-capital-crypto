@@ -204,7 +204,7 @@ func authenticatePass(csrf, username, password string) *ApiResponse {
 		"csrf":            {csrf},
 		"apiClient":       {"WEB"},
 		"bindDevice":      {"true"},
-		"deviceName":      {"CashMoney App"},
+		"deviceName":      {"Personal Capital Crypto"},
 		"username":        {username},
 		"passwd":          {password},
 		"skipLinkAccount": {"false"},

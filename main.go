@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+
+	"golang.org/x/text/language"
+	"golang.org/x/text/message"
 )
 
 func check(err error) {
@@ -36,5 +39,7 @@ func main() {
 	}
 
 	accounts := GetAccounts(csrf)
-	fmt.Println("Net Worth:", accounts.SpData["networth"])
+
+	printer := message.NewPrinter(language.English)
+	printer.Printf("Updated Net Worth: $%.2f\n", accounts.SpData["networth"])
 }
