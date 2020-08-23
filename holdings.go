@@ -60,12 +60,12 @@ func krakenTicker(pair string) map[string]KrakenTicker {
 func tickerInfo(ticker string) (string, string, error) {
 	switch ticker {
 	case "XBTUSD":
-		p, err := strconv.ParseFloat(krakenTicker("XBTUSD")["XXBTZUSD"].O, 64)
+		p, err := strconv.ParseFloat(krakenTicker("XBTUSD")["XXBTZUSD"].C[0], 64)
 		check(err)
 		ps := p / 100000000
 		return fmt.Sprintf("%.10f", ps), fmt.Sprintf("Bitcoin Satoshis ($%.10f/sat)", ps), nil
 	case "XDGUSD":
-		p, err := strconv.ParseFloat(krakenTicker("XDGUSD")["XDGUSD"].O, 64)
+		p, err := strconv.ParseFloat(krakenTicker("XDGUSD")["XDGUSD"].C[0], 64)
 		check(err)
 		return fmt.Sprintf("%.10f", p), fmt.Sprintf("Dogecoins ($%.10f/coin)", p), nil
 	}

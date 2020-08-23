@@ -14,8 +14,8 @@ var (
 	CFG_PC_PASSWORD       string
 	CFG_PC_CRYPTO_ACCOUNT string
 
-	CFG_XBT string
-	CFG_XDG string
+	CFG_XBT_AMOUNT string
+	CFG_XDG_AMOUNT string
 )
 
 func init() {
@@ -29,8 +29,8 @@ func init() {
 	CFG_PC_PASSWORD = GetEnv("PC_PASSWORD", "")
 	CFG_PC_CRYPTO_ACCOUNT = GetEnv("PC_CRYPTO_ACCOUNT", "")
 
-	CFG_XBT = GetEnv("XBT", "")
-	CFG_XDG = GetEnv("XDG", "")
+	CFG_XBT_AMOUNT = GetEnv("XBT_AMOUNT", "")
+	CFG_XDG_AMOUNT = GetEnv("XDG_AMOUNT", "")
 }
 
 func GetEnv(key, fallback string) string {

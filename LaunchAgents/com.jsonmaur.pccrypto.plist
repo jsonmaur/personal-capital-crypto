@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.jsonmaur.pccrypto</string>
+
+	<key>Program</key>
+	<string>/usr/bin/personal-capital-crypto</string>
+
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PC_USERNAME</key>
+		<string></string>
+
+		<key>PC_PASSWORD</key>
+		<string></string>
+
+		<key>PC_CRYPTO_ACCOUNT</key>
+		<string></string>
+
+		<key>XBT_AMOUNT</key>
+		<string></string>
+
+		<key>XDG_AMOUNT</key>
+		<string></string>
+	</dict>
+
+	<key>StartInterval</key>
+	<integer>3600</integer>
+
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>

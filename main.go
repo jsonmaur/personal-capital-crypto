@@ -21,8 +21,8 @@ func main() {
 
 	csrf := Authenticate()
 
-	if CFG_XBT != "" {
-		xbt, err := strconv.ParseFloat(CFG_XBT, 64)
+	if CFG_XBT_AMOUNT != "" {
+		xbt, err := strconv.ParseFloat(CFG_XBT_AMOUNT, 64)
 		check(err)
 
 		UpdateHolding(csrf, &Holding{
@@ -31,10 +31,10 @@ func main() {
 		})
 	}
 
-	if CFG_XDG != "" {
+	if CFG_XDG_AMOUNT != "" {
 		UpdateHolding(csrf, &Holding{
 			Ticker:   "XDGUSD",
-			Quantity: CFG_XDG,
+			Quantity: CFG_XDG_AMOUNT,
 		})
 	}
 
