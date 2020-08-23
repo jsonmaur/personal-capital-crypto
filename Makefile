@@ -5,4 +5,4 @@ format:
 	@gofmt -s -w .
 
 install:
-	@go install ./...
+	@GOBIN=/usr/local/bin go install

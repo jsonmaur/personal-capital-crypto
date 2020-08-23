@@ -6,7 +6,7 @@
 	<string>com.jsonmaur.pccrypto</string>
 
 	<key>Program</key>
-	<string>/usr/bin/personal-capital-crypto</string>
+	<string>/usr/local/bin/personal-capital-crypto</string>
 
 	<key>EnvironmentVariables</key>
 	<dict>
